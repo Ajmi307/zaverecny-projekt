@@ -253,7 +253,9 @@ section {
     color: var(--bezova);
 }
 
-
+.application__button{
+    margin-top: 20px;
+}
 
 .gallery__part {
     display: flex;
@@ -376,7 +378,6 @@ Počítač:	860px a víc
         border-bottom-right-radius: 10px;
     }
 
-
     .footer .grid {
         display: block;
     }
@@ -397,10 +398,6 @@ Počítač:	860px a víc
 
 /* Tablet */
 @media screen and (min-width: 480px) and (max-width: 859px) {
-    body {
-        background-color: red;
-    }
-
     .header__inner .flex {
         flex-direction: column;
     }
