@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
-          rel="stylesheet">
-</head>
-<body>
-<div class="">
-    <header class="header">
-        <div class="header__inner">
-            <div class="flex">
-                <div class="left-column">
-                    <img class="logo" src="logo.jpg" alt="">
-                    Fotokroužek Chýně
-                </div>
-                <div class="right-column">
-                    <ul class="menu">
-                        <li class="menu__item"><a href="/onas">O nás</a></li>
-                        <li class="menu__item"><a href="/krouzek">Kroužek</a></li>
-                        <li class="menu__item"><a href="/galerie">Galerie</a></li>
-                        <li class="menu__item"><a href="/kontakt">Kontakt</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+---
+layout: hlavni_sablona.njk
+title: Foto Kroužek - O kroužku
+---
 
     <section>
         <div class="section__inner">
@@ -58,7 +28,47 @@
                 jako
                 mladí fotografové plní nápadů a inspirace.</p>
 
-            <img width="100%" class="rounded-corners" src="./Images/skupinova.png" alt="Skupinova fotka" />
+            <img width="100%" class="rounded-corners" src="/Images/skupinova.png" alt="Skupinova fotka" />
+
+            <h2>Cena</h2>
+            
+            <p>Přihlášení na kroužek probíhá na každé školní pololetí. Lekce neprobíhají v době prázdnin a státních svátků.</p>
+            <p>Kurzovné je stanoveno na 2 700 Kč. <br>
+                Garantujeme 16 lekcí za pololetí, lekce trvá 90 min. </p>
+                <p>Víkendové a prázninové akce jsou hrazeny zvlášť. </p>
+          
+            <h2>Vybavení</h2>
+            <p>
+                Každý nadšený fotograf si může přinést svůj vlastní přístroj, aby se s ním během kroužku naučil, co nejlépe zacházet. 
+                Pro účastníky, kteří fotoaparát nemají máme připravené naše přístroje, které mohou během hodina  našich akcí využívat. <br>
+                Není nutné žádné speciální vybavení dokupovat, vše si děti vyzkouší během kurzu na našem vybavení. 
+            </p>
+            <h2>Témata kurzu</h2>
+            <ol>
+                <li>Portréty kamarádů: Děti mohou zkoumat umění zachycení výrazů a osobnosti svých kamarádů skrz portrétní fotografie.</li>
+                <li>Makrofotografie přírody: Zvětšte svět kolem sebe a zkuste zachytit detaily květin, listů nebo hmyzu pomocí makrofotografie.</li>
+                <li>Fotografie architektury: Prozkoumejte okolní město nebo školu a zkuste zachytit zajímavé a neobvyklé úhly budov a struktur.</li>
+                <li>Akční snímky: Téma zaměřené na pohyb a akci, kde děti mohou fotografovat sportovní aktivity, tance nebo hry.</li>
+                <li>Umělecká abstrakce: Děti mohou experimentovat s abstraktními formami a barvami, vytvářet fotografie, které vyjadřují nálady a pocity.</li>
+                <li>Noční fotografie: Zkuste zachytit světlo a stíny ve tmě, zkoumejte noční scenérie a experimentujte s dlouhými expozicemi.</li>
+                <li>Zpracování fotografie v grafickém programu.</li>
+                <li>Dokumentární fotografie: Nechte děti vytvořit příběh pomocí fotografií, dokumentující události ve svém okolí nebo škole.</li>
+                <li>Fotografie s využitím stínů: Experimentujte s tvorbou siluet nebo výrazných stínů při zachycování obrazů.</li>
+                <li>
+                    Sezónní témata: Podle ročního období mohou děti zkoumat témata jako jsou podzimní listí, jarní květiny, zimní krajiny atd.</li>
+                <li>Autoportréty: Děti mohou objevovat svou vlastní tvář v různých situacích a emocích, což může být fascinující způsob, jak se vyjádřit skrze fotografii.</li>
+
+                
+
+
+
+
+
+
+
+
+
+            </ol>
 
         </div>
     </section>
@@ -71,35 +81,7 @@
                 <p>Připojte se k nám a dejte svému dítěti šanci rozkvést se jako mladý fotograf a objevovat krásy, které
                     jinak mohly zůstat skryty. Společně můžeme otevřít dveře do světa, kde je každý snímek novým
                     dobrodružstvím, a každý objektiv jejich hrdým hlasem. </p>
-                <button class="button button__primary"><a href="/prihlaska">Podat přihlášku</a></button>
+                <button class="button button__primary"><a href="/prihlaska/">Podat přihlášku</a></button>
             </div>
         </div>
-    </section>
-
-    <footer class="footer">
-        <div>
-            <h1>Kontakt</h1>
-            <h2>Adresa</h2>
-            <p>Bolzanova 1, 253 01 Chýně</p>
-            <h2>Lektoři</h2>
-            <div>
-                <img src="Michaela.jpg" alt="Michaela">
-                <h3>Michaela Hradílková</h3>
-                <p>987 765 544</p>
-            </div>
-            <div>
-                <img src="Petr.jpg" alt="Petr">
-                <h3>Petr Hradílek</h3>
-                <p>987 765 544</p>
-            </div>
-            <h2>Kde nás najdete</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.5484725411447!2d14.217089696789554!3d50.05728920000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bbea8e9040cad%3A0xe69e78ee6953834f!2zWsOha2xhZG7DrSDFoWtvbGE!5e0!3m2!1scs!2scz!4v1704314640068!5m2!1scs!2scz"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-        </div>
-    </footer>
-</div>
-</body>
-</html>
+    </section>  

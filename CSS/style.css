@@ -12,6 +12,7 @@ html {
     --bezova: #FEF4E8;
     --modra: #13445A;
     --cervena: #790338;
+    --cervenaTmava: #8f0644;
     --bila: #FFFFFF;
     --skoro_cerna: #000000;
     --seda: #363636
@@ -50,7 +51,7 @@ button, .button {
     background-color: var(--primary);
 }
 
-.button__primary:hover{
+.button__primary:hover {
     background-color: var(--cervena);
 }
 
@@ -59,7 +60,7 @@ button, .button {
     color: var(--bezova);
 }
 
-.rounded-corners{
+.rounded-corners {
     border-radius: 15px;
 }
 
@@ -69,7 +70,7 @@ button, .button {
     margin-top: 20px;
 }
 
-.button__primary__margin-top{
+.button__primary__margin-top {
     margin-top: 16px;
 }
 
@@ -93,6 +94,23 @@ h2 {
     padding: 30px 0px;
 }
 
+.header__logo {
+    width: 70px;
+}
+
+
+.header__text {
+    position: relative;
+    bottom: 24px;
+    margin-left: 15px;
+    font-family: 'Merienda', cursive;
+    font-size: 24px;
+    color: var(--skoro_cerna);
+}
+
+.header__link{
+    text-decoration: none;
+}
 
 .header__inner {
     max-width: 1100px;
@@ -112,20 +130,20 @@ section {
     background-color: var(--bezova);
 }
 
-.modra{
+.modra {
     background-color: var(--modra);
 }
 
-.section-uvod{
+.section-uvod {
     background-image: url("../Images/cameras.jpg");
     background-size: cover;
 }
 
-.section-uvod__header{
+.section-uvod__header {
     color: white;
 }
 
-.section-uvod__button{
+.section-uvod__button {
     text-align: center;
     margin-top: 20px;
 }
@@ -148,6 +166,13 @@ section {
 
 }
 
+.grid__1-1{
+    display: grid;
+    gap: 20px;
+    text-align: start;
+    grid-template-columns: 1fr 1fr;
+}
+
 .part {
     padding: 20px;
 }
@@ -162,11 +187,6 @@ section {
     justify-content: normal;
 }
 
-.left-column {
-
-
-}
-
 
 .right-column {
     display: flex;
@@ -174,10 +194,7 @@ section {
 
 }
 
-.logo {
-    width: 170px;
-    height: auto;
-}
+
 
 .menu {
     margin: 0;
@@ -189,7 +206,8 @@ section {
 
 .menu__item {
     margin-left: 5px;
-    font-family: 'Diphylleia', serif;
+    font-size: 20px;
+    font-family: 'Lobster', sans-serif;
 }
 
 .menu a {
@@ -223,11 +241,11 @@ section {
     padding: 20px;
 }
 
-.cards__date{
+.cards__date {
     opacity: 0.7;
 }
 
-.cards__card_transparent{
+.cards__card_transparent {
     background-color: rgba(19, 68, 90, 0.8);
 }
 
@@ -235,10 +253,7 @@ section {
     color: var(--bezova);
 }
 
-.gallery {
 
-
-}
 
 .gallery__part {
     display: flex;
@@ -253,7 +268,7 @@ section {
     border-radius: 5px;
 }
 
-.photo__teacher{
+.photo__teacher {
     margin-bottom: 24px;
 }
 
@@ -262,15 +277,131 @@ section {
     margin-right: 24px;
 }
 
-.form__field{
+.form__field {
     margin-bottom: 12px;
 }
 
 .form__field input,
-.form__field select{
+.form__field select {
     width: 100%;
     border-radius: 3px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid var(--seda);
+}
+
+.footer__mapa {
+    width: 100%;
+}
+
+/*
+Responzivní breakpointy:
+Mobil:		0 - 479px
+Tablet:		480px - 859px
+Počítač:	860px a víc
+
+*/
+
+
+/* Mobil */
+@media screen and (max-width: 479px) {
+    body {
+        /*background-color: blue;*/
+    }
+
+    .header {
+        padding: 15px 15px 15px 15px;
+    }
+
+    .section__inner {
+        padding: 0 15px;
+    }
+
+    .footer {
+        padding: 0 15px;
+    }
+
+
+    .section-uvod-co-delame .grid {
+        display: block;
+    }
+
+    .section-uvod-co-delame .action {
+        text-align: center;
+    }
+
+    .section-uvod-co-delame img {
+        height: auto;
+        width: 100%;
+    }
+
+    .section-uvod-co-delame .button__primary {
+        margin-bottom: 20px;
+    }
+
+    .section-uvod .cards {
+        flex-direction: column;
+    }
+
+    .header__inner .left-column {
+        text-align: center;
+    }
+
+    .header__inner .flex {
+        flex-direction: column;
+    }
+
+    .header__inner .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__inner .menu__item {
+        margin-left: 0;
+    }
+
+    .header__inner .menu__item a {
+        border-radius: 0;
+        border-bottom: 1px solid var(--cervenaTmava);
+    }
+
+    .header__inner .menu__item:first-child a {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .header__inner .menu__item:last-child a {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .footer .grid {
+        display: block;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    .gallery__part{
+        flex-direction: column;
+    }
+
+    .grid__1-1{
+        display: block;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) and (max-width: 859px) {
+    body {
+        background-color: red;
+    }
+
+    .header__inner .flex {
+        flex-direction: column;
+    }
 }
