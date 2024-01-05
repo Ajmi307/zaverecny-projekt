@@ -238,7 +238,7 @@ section {
     border-radius: 12px;
     background-color: var(--modra);
     color: var(--bezova);
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .cards__date {
