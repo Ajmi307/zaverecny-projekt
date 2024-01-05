@@ -1,0 +1,276 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary: #970747;
+    --secondaray: #FEF4E8;
+    --bezova: #FEF4E8;
+    --modra: #13445A;
+    --cervena: #790338;
+    --bila: #FFFFFF;
+    --skoro_cerna: #000000;
+    --seda: #363636
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--skoro_cerna);
+
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lobster', sans-serif;
+    line-height: 1.25;
+    color: var(--modra);
+
+}
+
+button, .button {
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: 0px;
+    text-decoration: none;
+}
+
+.button__primary {
+    color: var(--bezova);
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.button__primary:hover{
+    background-color: var(--cervena);
+}
+
+.button__primary a {
+    text-decoration: none;
+    color: var(--bezova);
+}
+
+.rounded-corners{
+    border-radius: 15px;
+}
+
+
+.button--right {
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.button__primary__margin-top{
+    margin-top: 16px;
+}
+
+.button :active,
+.button :hover,
+.button :focus {
+    background-color: var(--cervena);
+    color: var(--bila);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.header {
+    background-color: var(--bezova);
+    padding: 30px 0px;
+}
+
+
+.header__inner {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bezova {
+    background-color: var(--bezova);
+}
+
+.modra{
+    background-color: var(--modra);
+}
+
+.section-uvod{
+    background-image: url("../Images/cameras.jpg");
+    background-size: cover;
+}
+
+.section-uvod__header{
+    color: white;
+}
+
+.section-uvod__button{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: var(--bila);
+    color: var(--skoro_cerna);
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    text-align: start;
+    grid-template-columns: 2fr 1fr;
+
+
+}
+
+.part {
+    padding: 20px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex__normal-justify {
+    justify-content: normal;
+}
+
+.left-column {
+
+
+}
+
+
+.right-column {
+    display: flex;
+    gap: 10px;
+
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+    display: flex;
+}
+
+.menu__item {
+    margin-left: 5px;
+    font-family: 'Diphylleia', serif;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: var(--bezova);
+    border-radius: 25px;
+    background-color: var(--primary);
+}
+
+.menu a:active,
+.menu a:hover,
+.menu a:focus {
+    background-color: var(--cervena);
+    color: var(--bila);
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cards__card {
+    border-color: var(--modra);
+    border-radius: 12px;
+    background-color: var(--modra);
+    color: var(--bezova);
+    padding: 20px;
+}
+
+.cards__date{
+    opacity: 0.7;
+}
+
+.cards__card_transparent{
+    background-color: rgba(19, 68, 90, 0.8);
+}
+
+.cards__card h1 {
+    color: var(--bezova);
+}
+
+.gallery {
+
+
+}
+
+.gallery__part {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.photo__teacher{
+    margin-bottom: 24px;
+}
+
+.photo__profile {
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.form__field{
+    margin-bottom: 12px;
+}
+
+.form__field input,
+.form__field select{
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--seda);
+}

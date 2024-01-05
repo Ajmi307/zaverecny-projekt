@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="">
+    <header class="header">
+        <div class="header__inner">
+            <div class="flex">
+                <div class="left-column">
+                    <img class="logo" src="logo.jpg" alt="">
+                    Fotokroužek Chýně
+                </div>
+                <div class="right-column">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="/onas">O nás</a></li>
+                        <li class="menu__item"><a href="/krouzek">Kroužek</a></li>
+                        <li class="menu__item"><a href="/galerie">Galerie</a></li>
+                        <li class="menu__item"><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="section">
+        <div class="section__inner">
+            <h1>Přihláška</h1>
+            <div class="application">
+                <form action="">
+                    <h2>Zákonný zástupce</h2>
+                    <div class="form">
+                        <div class="form__field">
+                            <label for="jmenoaprijmeni">Jméno a příjmení</label>
+                            <input id="jmenoaprijmeni" type="text"/>
+                        </div>
+
+                        <div class="form__field">
+                            <label for="telefon">Telefon</label>
+                            <input id="telefon" type="tel"/>
+                        </div>
+
+                        <div class="form__field">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email">
+                        </div>
+                    </div>
+
+                    <h2>Dítě</h2>
+                    <div class="form__field">
+                        <label for="jmeno">Jméno</label>
+                        <input id="jmeno" type="text"/>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="prijmeni">Příjmení</label>
+                        <input id="prijmeni" type="text"/>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="date">Datum narození</label>
+                        <input id="date" type="date">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="termin">Termín kroužku</label>
+                        <select name="termin" id="termin">
+                            <option value="">Začátečníci - Úterý 16:00</option>
+                            <option value="">Začátečníci - Čtvrtek 15:00</option>
+                            <option value="">Pokročilí - Čtvrtek 16:00</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>
+                            Souhlasím se <a href=""> zpracováním údajů GDPR</a>
+                            <input id="gdpr" type="checkbox"/>
+                        </label>
+                    </div>
+
+                </form>
+                <button class="button button__primary">Podat přihlášku</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div>
+            <h1>Kontakt</h1>
+            <h2>Adresa</h2>
+            <p>Bolzanova 1, 253 01 Chýně</p>
+            <h2>Lektoři</h2>
+            <div>
+                <img src="Michaela.jpg" alt="Michaela">
+                <h3>Michaela Hradílková</h3>
+                <p>987 765 544</p>
+            </div>
+            <div>
+                <img src="Petr.jpg" alt="Petr">
+                <h3>Petr Hradílek</h3>
+                <p>987 765 544</p>
+            </div>
+            <h2>Kde nás najdete</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.5484725411447!2d14.217089696789554!3d50.05728920000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bbea8e9040cad%3A0xe69e78ee6953834f!2zWsOha2xhZG7DrSDFoWtvbGE!5e0!3m2!1scs!2scz!4v1704314640068!5m2!1scs!2scz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </footer>
+</div>
+</body>
+</html>
